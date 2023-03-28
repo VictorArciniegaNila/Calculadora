@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="calculator">
+		<div class="screen">
+			<input id="result" type="text" placeholder="0" readonly>
+		</div>
+		<div class="keypad">
+			<button class="key" onclick="insert('7')">7</button>
+			<button class="key" onclick="insert('8')">8</button>
+			<button class="key" onclick="insert('9')">9</button>
+			<button class="key operator" onclick="insert('/')">÷</button>
+			<button class="key" onclick="insert('4')">4</button>
+			<button class="key" onclick="insert('5')">5</button>
+			<button class="key" onclick="insert('6')">6</button>
+			<button class="key operator" onclick="insert('*')">x</button>
+			<button class="key" onclick="insert('1')">1</button>
+			<button class="key" onclick="insert('2')">2</button>
+			<button class="key" onclick="insert('3')">3</button>
+			<button class="key operator" onclick="insert('-')">-</button>
+			<button class="key" onclick="insert('0')">0</button>
+			<button class="key" onclick="insert('.')">.</button>
+			<button class="key operator" onclick="insert('+')">+</button>
+			<button class="key clear" onclick="clearInput()">C</button>
+			<button class="key delete" onclick="deleteLast()">⌫</button>
+			<button class="key equal" onclick="calculate()">=</button>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
